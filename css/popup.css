@@ -1,0 +1,7 @@
+#popup{
+    width: 200px;
+    display: none;
+    padding: 30px 20px;
+    border: 2px solid #000;
+    margin: 3rem auto;
+}

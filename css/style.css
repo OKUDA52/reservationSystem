@@ -1,0 +1,119 @@
+*{
+box-sizing: border-box;
+font-size: 62.5%;
+}
+
+body{
+    max-width: 1000px;
+    /* padding-top: 50px; */
+    display: block;
+    margin: 0 auto 0;
+    text-align: center;
+    font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+}
+.header{
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+.logout{
+    display: block;
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
+    font-size: 0.8rem;
+
+}
+
+.logout a:hover{
+    background-color: rgba(207, 207, 207,0.35);
+}
+
+.logout a{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.logout a,.logout a:visited,.logout a:active{
+    background-color: rgb(86, 189, 86);
+    padding: 0.7rem;
+    margin: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.wrapper{
+    margin: 0 10% 10% 10%;
+    padding: 50px;
+    border: 5px dashed rgb(179, 222, 252);
+}
+
+h1{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+p{
+    margin: 1.8rem 0;
+    font-size: 1rem;
+}
+
+
+dt,dd{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.syubetuSentaku{
+    list-style: none;
+}
+.fwablock a,.fwablock a:visited,.fwablock a:active{
+    display: inline-block;
+    background-color: gray;
+    padding: 1rem;
+    margin: 0.8rem;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.fwablock a:hover{
+    background-color: rgba(207, 207, 207,0.75);
+}
+
+.yoyakuTable{
+    display: block;
+    margin: 0 6%;
+    font-size: 0.8rem;
+
+}
+.yoyakuTable>table{
+    width: 100%;
+padding: 0.3rem;
+margin: 0;
+}
+
+
+.pinkdot_top{
+    border-top: 2px dashed pink;
+}
+th{
+    font-weight: normal;
+    padding: 1rem;
+}
+
+td{
+    padding: 1rem;
+}
+/* tr:nth-child(even){ */
+.pinkdot_bottom{
+    border-bottom: 2px dashed pink;
+    /* background-color: rgb(255, 221, 227); */
+}
