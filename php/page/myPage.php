@@ -47,7 +47,7 @@
     </thead>
     <tbody>
 <?php
-    $i=1;
+    $i=1;//予約データのページ上の連番
     foreach($yoyakuNaiyo as $key => $value){ 
     print('<tr class="pinkdot_bottom">');
     print("<td>" . h($value[1]) . "</td><td>" . h($value[2]) ."</td><td>" . h($value[3]) . "</td><td>" . h($value[4]) . 

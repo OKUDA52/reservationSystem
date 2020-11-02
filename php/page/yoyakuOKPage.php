@@ -6,7 +6,7 @@
         header('Location: errorPage.php');
         die();
     }
-    // require("common.php");
+    require("../common/hsc.php");
     $time=$_GET['time'];
     $day=$_GET['day'];
 
@@ -29,8 +29,8 @@
 <header class="header"></header>
     <div class="wrapper">
         <h1>予約完了</h1>
-        <p> 日付：<?php echo $day; ?></p> 
-        <p> 時間：<?php echo $time; ?></p> 
+        <p> 日付：<?php echo h($day); ?></p> 
+        <p> 時間：<?php echo h($time); ?></p> 
 
         <p>上記の内容で予約が完了しました。</p>
         <div class="fwablock">

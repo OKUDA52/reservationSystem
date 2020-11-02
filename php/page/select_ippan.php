@@ -49,7 +49,7 @@ require("../common/setToken.php");
             <table class="holder_form">
                 <tr>
                     <td class="left_box">
-                        <p><?php echo $month . "月"; ?></p>
+                        <p><?php echo h($month) . "月"; ?></p>
                         <table class="calender_yoyaku">
                             <thead>
                                 <tr class="pinkdot_top pinkdot_bottom">
@@ -103,16 +103,15 @@ require("../common/setToken.php");
             <input type="hidden" name="form_token" value="<?php echo  h($tmp_token)?>">
             <input type="button" id="btn_modoru" value="戻る">
             <input type="submit" value="予約する">
-            
         </form>
 
     </div>
     <!-- 当月分カレンダーの日付選択用リスナー追加処理 -->
     <script>
-            let year = <?php echo $year; ?>;
-            let firstday = <?php echo $today; ?>;
-            let lastday = <?php echo $daysOfMonth; ?>;
-            let month =  <?php echo $month; ?>;
+            let year = <?php echo h($year); ?>;
+            let firstday = <?php echo h($today); ?>;
+            let lastday = <?php echo h($daysOfMonth); ?>;
+            let month =  <?php echo h($month); ?>;
             // let targetId = null;
             for (let i = firstday; i < lastday; i++) {
                 let targetId = year + '-' + month + '-' + i;

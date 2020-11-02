@@ -5,7 +5,7 @@
         header('Location:errorPage.php');
         die();
     }
-    require("common.php");
+    require("../common/hsc.php");
 ?>
 
 
