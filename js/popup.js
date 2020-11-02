@@ -1,7 +1,8 @@
 let holderDeleteName;
 
-function confirm_test(formName) { // 問い合わせるボタンをクリックした場合
+function confirm_test(formName) { // 削除ボタンをクリックした場合
     document.getElementById('popup').style.display = 'block';
+    document.getElementById('grayCover').style.display = 'block';
     holderDeleteName = formName;
     console.log(typeof(formName));
 
@@ -14,4 +15,5 @@ function okfunc() { // OKをクリックした場合
  
 function nofunc() { // キャンセルをクリックした場合
     document.getElementById('popup').style.display = 'none';
+    document.getElementById('grayCover').style.display = 'none';
 }

@@ -1,5 +1,7 @@
 <?php
 session_start();
+require("php/common/setToken.php");
+require("php/common/hsc.php");
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -25,6 +27,7 @@ session_start();
             <dt><label for="pass">パスワード：</label></dt>
             <dd><input type="password" name="pass" id="pass"></dd>
         </dl>
+        <input type="hidden" name="form_token" value="<?php echo  h($tmp_token)?>">
         <p><input type="submit" value="ログイン"></p>
     </form>
 

@@ -1,7 +1,22 @@
 #popup{
-    width: 200px;
     display: none;
+    width: 280px;
     padding: 30px 20px;
     border: 2px solid #000;
-    margin: 3rem auto;
+    background-color: white;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    /* margin: 0 auto; */
+    z-index: 999;
+}
+#grayCover{
+    display: none;
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 150vw;
+    height: 150vh;
+    background-color: rgba(100,100,100,0.25);
+    z-index: 5;
 }

@@ -5,7 +5,8 @@ if ($user == '') {
     header('Location:errorPage.php');
     die();
 }
-require("../common.php");
+require("../common/hsc.php");
+require("../common/setToken.php");
 
 ?>
 <!DOCTYPE html>
@@ -99,6 +100,7 @@ require("../common.php");
             <input type="hidden" id="yoyakuSyubetu" name="yoyakuSyubetu" value="2">
             <input type="hidden" id="day" name="day" value="<?php echo h($date); ?>">
             <input type="hidden" id="time" name="time" value="12:30">
+            <input type="hidden" name="form_token" value="<?php echo  h($tmp_token)?>">
             <input type="button" id="btn_modoru" value="戻る">
             <input type="submit" value="予約する">
             

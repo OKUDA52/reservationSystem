@@ -6,7 +6,7 @@
         header('Location: errorPage.php');
         die();
     }
-    require("../common.php");
+    require("../common/hsc.php");
     $yoyakuNaiyo = $_SESSION['yoyakuNaiyo'];
 //     echo('<pre>');
 //     var_dump($yoyakuNaiyo);
@@ -23,10 +23,12 @@
     <link rel="stylesheet" href="../../css/popup.css">
     <script src="../../js/popup.js"></script>
 </head>
+
 <body>
 <header class="header">
 <div class="logout"><a href="logoutPage.php">ログアウト</a></div>
 </header>
+
 <div class="wrapper">
 <h1>マイページ</h1>
 <p>日付：<?php echo date("Y/m/d") ;?></p>
@@ -63,7 +65,7 @@
 </table>
     <!-- hidden -->
     <div id="popup" >
-        本当に削除しますか？<br />
+        <p>本当に削除しますか？</p>
         <button id="ok" onclick="okfunc()">OK</button>
         <button id="no" onclick="nofunc()">キャンセル</button>
     </div>
@@ -78,6 +80,6 @@
     <li><a href="select_yobo.php">予防接種</a></li>
 </ul>
     </div>
-
+    <div id="grayCover"></div>
 </body>
 </html>

@@ -2,7 +2,7 @@
     セッション変数発行 -->
     <?php 
         session_start();
-
+        require("common/checkToken.php");
         $user=$_POST['user'];
         $pass=$_POST['pass'];
 

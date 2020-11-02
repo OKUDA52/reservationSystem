@@ -10,7 +10,8 @@ if ($user == '' || $syubetu == '' || $day == '' || $time == '') {
     header('Location:errorPage.php');
     die();
 }
-require("common.php");
+require("common/checkToken.php");
+require("common/hsc.php");
 
 
 header("Content-type: text/html; charset=utf-8");
